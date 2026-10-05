@@ -25,8 +25,8 @@ const (
 	msgNoImpactedOGXServers = "No OGXServer(s) with external access enabled and a missing hostname or TLS Secret found" +
 		" - ready for OpenShift AI 3.6"
 	msgImpactedOGXServers = "Found %d OGXServer(s) with external access enabled and a missing hostname or TLS Secret." +
-		" OpenShift AI 3.6 requires both when external access is enabled, and rejects every change to these" +
-		" OGXServer(s) until both are set"
+		" OpenShift AI 3.6 requires both when external access is enabled, and rejects changes to these" +
+		" OGXServer(s) that leave external access enabled without both"
 )
 
 // ExternalAccessTLSCheck reports OGXServers that enable external access without a hostname or a
